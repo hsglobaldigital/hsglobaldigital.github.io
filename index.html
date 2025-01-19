@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HS Global Digital provides enterprise solutions including web applications, mobile apps, data migration, and digital transformation services">
+    <title>HS Global Digital - Enterprise Digital Solutions</title>
+    <style>
+        /* Reset focus styles for better visibility */
+        *:focus {
+            outline: 3px solid #2563eb;
+            outline-offset: 2px;
+        }
+
+        /* Skip to main content link */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #2563eb;
+            color: white;
+            padding: 8px;
+            z-index: 100;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            color: #1a1a1a; /* Darkened for better contrast */
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: white;
+            padding: 6rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.2;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            max-width: 600px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+
+        .services {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .services h2 {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #0f172a;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .service-card {
+            padding: 0;
+            border-radius: 8px;
+            background: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+            overflow: hidden;
+        }
+
+        .service-card:hover,
+        .service-card:focus-within {
+            transform: translateY(-5px);
+        }
+
+        .service-card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+        }
+
+        .service-content {
+            padding: 1.5rem;
+        }
+
+        .service-card h3 {
+            color: #0f172a;
+            margin-top: 0;
+        }
+
+        .cta {
+            background: #f8fafc;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: #1e40af; /* Changed for better contrast */
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+
+        .button:hover,
+        .button:focus {
+            background: #1e293b;
+        }
+
+        footer {
+            background: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        /* Responsive focus styles */
+        @media (max-width: 768px) {
+            .service-card:focus-within {
+                transform: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <header role="banner">
+        <section class="hero" aria-labelledby="hero-heading">
+            <img src="media/nasa-Q1p7bh3SHj8-unsplash.jpg" alt="" class="hero-image" role="presentation">
+            <div class="hero-content">
+                <h1 id="hero-heading">HS Global Digital</h1>
+                <p>Transforming enterprises through innovative digital solutions</p>
+            </div>
+        </section>
+    </header>
+
+    <main id="main" role="main">
+        <section class="services" aria-labelledby="services-heading">
+            <h2 id="services-heading">Our Services</h2>
+            <div class="service-grid" role="list">
+                <article class="service-card" role="listitem">
+                    <img src="media/kobu-agency-7okkFhxrxNw-unsplash.jpg" alt="Illustration of software development" loading="lazy">
+                    <div class="service-content">
+                        <h3>Software Development</h3>
+                        <p>Custom enterprise-grade software built with cutting-edge technologies, ensuring scalability, security, and performance.</p>
+                    </div>
+                </article>
+                <article class="service-card" role="listitem">
+                    <img src="media/freestocks-mw6Onwg4frY-unsplash.jpg" alt="Illustration of mobile app development" loading="lazy">
+                    <div class="service-content">
+                        <h3>Mobile Solutions</h3>
+                        <p>Native and cross-platform mobile applications designed to enhance operational efficiency and user engagement.</p>
+                    </div>
+                </article>
+                <article class="service-card" role="listitem">
+                    <img src="media/tyler-franta-iusJ25iYu1c-unsplash.jpg" alt="Illustration of data science and artificial intelligence" loading="lazy">
+                    <div class="service-content">
+                        <h3>Data and AI</h3>
+                        <p>Advanced analytics and AI solutions that transform raw data into actionable insights, including machine learning models, predictive analytics, and intelligent automation systems.</p>
+                    </div>
+                </article>
+                <article class="service-card" role="listitem">
+                    <img src="media/jason-goodman-Oalh2MojUuk-unsplash.jpg" alt="Illustration of digital transformation" loading="lazy">
+                    <div class="service-content">
+                        <h3>Digital Transformation</h3>
+                        <p>End-to-end digital transformation strategies tailored for public sector and blue-chip organizations.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="cta" aria-labelledby="cta-heading">
+            <h2 id="cta-heading">Ready to Transform Your Organization?</h2>
+            <p>Let's discuss how HS Global Digital can help you achieve your digital objectives.</p>
+            <a href="mailto:hello@hsglobal.digital" class="button" role="button">Contact Us</a>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <p>&copy; 2025 HS Global Digital Ltd. All rights reserved.</p>
+    </footer>
+</body>
+</html>
