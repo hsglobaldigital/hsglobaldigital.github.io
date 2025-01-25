@@ -154,6 +154,53 @@
                 transform: none;
             }
         }
+
+        .clients {
+            padding: 4rem 2rem;
+            background: #f8fafc;
+            text-align: center;
+        }
+
+        .clients h2 {
+            color: #0f172a;
+            margin-bottom: 3rem;
+        }
+
+        .client-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 3rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            align-items: center;
+        }
+
+        .client-logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+        }
+
+        .client-logo img {
+            max-width: 160px;
+            max-height: 80px;
+            object-fit: contain;
+            filter: grayscale(100%);
+            opacity: 0.7;
+            transition: all 0.3s ease;
+        }
+
+        .client-logo img:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+
+        @media (max-width: 768px) {
+            .client-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
     </style>
 </head>
 <body>
@@ -203,6 +250,27 @@
                         <p>End-to-end digital transformation strategies tailored for public sector and blue-chip organizations.</p>
                     </div>
                 </article>
+            </div>
+        </section>
+
+        <section class="clients" aria-labelledby="clients-heading">
+            <h2 id="clients-heading">Trusted By</h2>
+            <div class="client-grid">
+                <div class="client-logo">
+                    <img src="media/dfe-logo.png" alt="Department for Education logo" loading="lazy">
+                </div>
+                <div class="client-logo">
+                    <img src="media/sta-logo.png" alt="Standards and Testing Agency logo" loading="lazy">
+                </div>
+                <div class="client-logo">
+                    <img src="media/tesco-logo.png" alt="Tesco logo" loading="lazy">
+                </div>
+                <div class="client-logo">
+                    <img src="media/motorola-logo.png" alt="Motorola logo" loading="lazy">
+                </div>
+                <div class="client-logo">
+                    <img src="media/dvsa-logo.png" alt="DVSA logo" loading="lazy">
+                </div>
             </div>
         </section>
 
